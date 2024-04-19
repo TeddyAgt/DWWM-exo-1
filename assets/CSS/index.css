@@ -1,0 +1,80 @@
+.article--first {
+  position: relative;
+}
+
+.article--first::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -62px;
+  right: 16px;
+  background: url(../images/kitty-pen.png);
+}
+
+.article__date {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.article__author {
+  font-family: var(--ff-title);
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.article__content {
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.subtitle.hello-world {
+  font-size: clamp(0.3rem, 1.3vw, 1.8rem);
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.article--hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .article--hidden {
+    display: block;
+  }
+}
+
+/* About */
+.about-article {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 5px;
+  background: url(../images/erik-jan-leusink-IbPxGLgJiMI-unsplash-filtre.jpg)
+    center 20% / cover;
+}
+
+.about-article::before {
+  content: "";
+  position: absolute;
+  top: -64px;
+  left: 16px;
+  width: 64px;
+  height: 64px;
+  background: url(../images/kitty-super.png);
+}
+
+.about-article .main-title {
+  margin-top: 0;
+  text-align: right;
+  color: var(--white);
+}
+
+.about-article__text-content {
+  color: var(--white);
+}

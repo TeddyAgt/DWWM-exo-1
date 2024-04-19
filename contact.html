@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pas d'exercice Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi mollitia autem nesciunt?">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c685d2b770.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/images/kitty-accent.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/CSS/contact.css">
+    <title>Contact | Hello World</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="./index.html" aria-label="Retour à l'accueil">
+            <img src="./assets/images/kitty.png" alt="logo" class="logo">
+        </a>
+
+        <button class="mobile-menu__toggler" aria-controls="main-navigation" aria-expanded="false"
+            aria-label="Ouvrir le menu de navigation">
+            <img src="./assets/icons/bars-solid.svg" alt="icone menu" aria-hidden="true">
+        </button>
+
+        <nav class="main-navigation" id="main-navigation">
+            <ul>
+                <li>
+                    <a class="main-navigation__link" href="./index.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a class="main-navigation__link" href="./index.html#articles" title="Articles">Articles</a>
+                </li>
+                <li>
+                    <a class="main-navigation__link" href="./team.html
+                    " title="Galerie">L'équipe</a>
+                </li>
+                <li>
+                    <a class="main-navigation__link" href="./services.html" title="Services">Nos services</a>
+                </li>
+                <li>
+                    <a class="main-navigation__link main-navigation__link--active" href="./contact.html"
+                        title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+
+            <h1 class="main-title">Envie de papoter ?</h1>
+            <p class="subtitle">Envoyez nous un message !</p>
+
+            <form action="./contact.html" method="POST">
+
+                <div class="form-container form-container__left">
+                    <fieldset>
+                        <legend>Civilité</legend>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="female">Mme.</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">M.</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Autre</label>
+                    </fieldset>
+                    <div class="input-group">
+                        <label for="lastname">Votre nom</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                    <div class="input-group">
+                        <label for="firstname">Votre prénom</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Votre téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Votre adresse mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="country">Sélectionnez votre pays</label>
+                        <select name="country" id="country">
+                            <option value="AF">Afghanistan</option>
+                            <option value="ZA">Afrique du Sud</option>
+                            <option value="AX">Åland, Îles</option>
+                            <option value="AL">Albanie</option>
+                            <option value="DZ">Algérie</option>
+                            <option value="DE">Allemagne</option>
+                            <option value="AD">Andorre</option>
+                            <option value="CN">Chine</option>
+                            <option value="DK">Danemark</option>
+                            <option value="ES">Espagne</option>
+                            <option value="FR" selected>France</option>
+                            <option value="GE">Géorgie</option>
+                            <option value="HT">Haïti</option>
+                            <option value="HU">Hongrie</option>
+                            <option value="IE">Irlande</option>
+                            <option value="JP">Japon</option>
+                            <option value="LT">Lituanie</option>
+                            <option value="ML">Mali</option>
+                            <option value="MX">Mexique</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="form-container form-container__right">
+                    <div class="input-group">
+                        <label for="subject">Sujet de votre message</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="input-group input-group--rgpd">
+                        <input type="checkbox" id="rgpd" name="rgpd">
+                        <label for="rgpd">
+                            J'accepte les <a href="#">réglementations générales de protection des
+                                données</a>
+                        </label>
+                    </div>
+                    <div class="control-group">
+                        <button class="btn btn-primary" type="submit">Valider</button>
+                        <button class="btn btn-accent" type="reset">Annuler</button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer__content">
+            &copy; Teddy Aboim 2024 | Voir les <a href="./mentions.html" class="footer__link" title="mentions">mentions
+                légales</a>.
+            <br>
+            Merci à <a href="https://www.flaticon.com/free-icons/cat-sleep" class="footer__link">Freepik</a> pour les
+            icônes.
+        </p>
+
+        <nav class="footer__navigation">
+            <a class="footer__link footer__link-network" aria-label="Suivez nous sur Instagram" href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="footer__link footer__link-network" aria-label="Suivez nous sur Twitter" href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a class="footer__link footer__link-network" aria-label="Suivez nous sur Facebook" href="">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </nav>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

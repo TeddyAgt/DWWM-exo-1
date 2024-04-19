@@ -1,0 +1,96 @@
+.main-title {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 80px;
+}
+
+form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url(../images/cat-sleep.png);
+  top: -60px;
+  right: 16px;
+}
+
+.form-container__right {
+  margin-left: 32px;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.input-group {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group--rgpd {
+  flex-direction: row;
+}
+
+.control-group {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label,
+input,
+textarea,
+select {
+  font-size: 1.8rem;
+  padding: 8px;
+}
+
+input:not([type="radio"], [type="checkbox"]),
+select,
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--grey);
+}
+
+input:not([type="radio"], [type="checkbox"]):focus,
+textarea:focus {
+  outline: none;
+  outline: 2px solid var(--primary);
+}
+
+textarea {
+  min-height: 250px;
+}
+
+@media screen and (max-width: 1100px) {
+  /* Je ne respecte pas la consigne des max 1000px parce que mon design commence à se casser un peu avant */
+  form {
+    display: block;
+    max-width: 650px;
+  }
+
+  .form-container__right {
+    margin-left: 0px;
+  }
+}

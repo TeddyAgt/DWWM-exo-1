@@ -1,0 +1,96 @@
+.article.services-navigation {
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  gap: 16px;
+  margin-bottom: 68px;
+}
+
+.services-navigation {
+  position: relative;
+}
+
+.services-navigation::before {
+  content: "";
+  position: absolute;
+  top: -59px;
+  left: 16px;
+  width: 64px;
+  height: 64px;
+  background: url(../images/kitty-book.png);
+}
+
+.services-navigation__link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-out;
+}
+
+.services-navigation__link:hover {
+  background: var(--primary-dark);
+  transition: background-color 0.2s ease-out;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+}
+
+.service-card--odd {
+  grid-template-columns: 2fr 1fr;
+}
+
+.service-card--even {
+  grid-template-columns: 1fr 2fr;
+}
+
+.service-card__container--big {
+  width: 66%;
+  padding: 16px;
+}
+.service-card__container--small {
+  width: 33%;
+}
+
+.service-card__picture {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.section-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.service-card__text-content {
+  transition: color 0.2s ease-out;
+}
+
+.service-card__text-content:hover {
+  color: transparent;
+}
+
+@media screen and (max-width: 850px) {
+  .article.services-navigation {
+    display: none;
+  }
+
+  .service-card {
+    flex-direction: column;
+  }
+
+  .service-card__container {
+    width: 100%;
+  }
+
+  .service-card__container--small {
+    order: 1;
+  }
+
+  .service-card__container--big {
+    order: 2;
+  }
+}
